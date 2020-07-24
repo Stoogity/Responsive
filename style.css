@@ -1,0 +1,108 @@
+#header {
+    text-align: center;
+}
+
+/* Sets main container as a grid layout so that all boxes are the same size and scale with the page size */
+#mainContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
+    grid-gap: 1rem;
+}
+
+/* Formats first grid item */
+.a {
+    background-color: burlywood;
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    border: double;
+}
+
+/* Formats seconds grid item */
+.b {
+    background-color: burlywood;
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+    border: solid;
+}
+
+/* Formats 3rd grid item */
+.c {
+    background-color: burlywood;
+    grid-column: 3 / 3;
+    grid-row: 1 / 1; 
+    border-style: solid;
+    border-radius: 1em;
+}
+
+/* Formats image within 3rd grid item so that the image width will be 50% of the container and float to the left */
+.c img {
+    width: 50%;
+    height: auto;
+    float: left;
+    padding: 2%;
+}
+
+.ctext {
+    padding: 2%;
+}
+
+/* Formats 4th grid item */
+.d {
+    background-color: burlywood;
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+    vertical-align: middle;
+    border-style: dotted;
+}
+
+/* Formats 4th grid item's image the same as above */
+.d img {
+    width: 50%;
+    float: left;
+    padding: 2%;
+    word-wrap: normal;
+}
+
+.dtext {
+    padding: 2%;
+}
+
+/* Formats 5th grid item */
+.e {
+    background-color: burlywood;
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    border-style: solid;
+}
+
+/* Formats image same as above */
+.e img {
+    width: 50%;
+    float: left;
+    word-wrap: normal;
+    padding: 2%;
+}
+
+
+.etext {
+    padding: 2%;
+}
+
+/* Formats last grid item */
+.f {
+    background-color: burlywood;
+    grid-column: 3 / 3;
+    grid-row: 2 / 2;
+    border-style: double;
+}
+
+/* Formats image same as above */
+.f img {
+    width: 50%;
+    padding: 2%;
+    float: left;
+}
+
+.ftext {
+    padding: 2%;
+}
